@@ -1,0 +1,138 @@
+---
+layout: post-index
+title: Posts
+---
+<head> 
+{% include head.html %} 
+</head>
+
+{% if paginator.previous_page %}
+{% else %}
+<article style="padding:0px">
+    <div class="grid" style="display:flex; align-items:stretch">
+
+        <div class="col-1-2 .d-md-none">
+            <div style="
+            display:table-cell;
+            float:left;
+            width:100%;
+            height:100%;
+            background-image: url(/media/yosemite2.png);
+            background-size:cover;
+            background-position:center">
+        </div></div>
+
+        <div class="col-1-2">
+
+            <h2 class="entry-title">
+                About me
+            </h2>
+            <hr>
+
+	    <p>
+I research nonsmooth optimization, splitting algorithms, machine
+learning, and monotone operator theory. These tools are quite handy
+in solving nonlinear problems in data science, signal/image/audio
+processing, and large-scale optimization.
+	    </p>
+
+            <br><br>
+            <h2 class="entry-title">Background</h2>
+            <hr>
+	<b>Postdoc</b>,
+	<a href="https://iol.zib.de/">
+	Interactive Optimization and Learning Lab</a>,
+	Technische Universität Berlin and Zuse Institute Berlin.
+        <br>
+            <b>PhD, Mathematics</b>, North Carolina State University<br>
+        <ul>
+		<li>NSF Graduate Research Fellowship</li>
+              <li>Thesis: <a href="media/publications/thesis.pdf">
+	      Construction of Functions from Nonlinear
+	      Transformations</a></li>
+                <li>Advisor: <a href="https://pcombet.math.ncsu.edu/">Patrick L.  Combettes</a> </li> 
+            </ul>
+	    <b>MS, Applied Mathematics</b>, North Carolina State
+	    University.<br>
+            <b>BS, Mathematics</b>, James Madison University.
+
+        </div>
+</div>
+</article>
+{% endif %}
+
+{% for post in paginator.posts %}
+
+<article>  
+    <!-- POST FEATURED IMAGE -->
+    <div class="featured-image">
+        <div style="height:150px; overflow-y:hidden; position:relative">
+            <a  href="{{ site.url }}{{ post.url }}">
+    {% if post.featured-image == "" or post.featured-image == nil %}
+    {% if post.layout == "talks" %}
+        <img src="/media/bokeh-header-1.png", style="width:100%">
+    {% else %}
+        <img src="/media/library-header-1.png", style="width:100%">
+    {% endif %}
+    {% else %}
+        <img src="{{ post.featured-image }}" style="width:100%;">
+    {% endif %}
+    </a>
+    </div></div>
+    <!-- POST TITLE -->
+    <header>
+        <h2 class="entry-title">
+            <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a>
+        </h2>
+<!--         {% if post.subtitle %}
+        <h3 class="entry-subtitle">
+            <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.subtitle }}</a>
+        </h3>
+        {% endif %} -->
+    </header>
+            <!-- POST BYLINE -->
+            <div class="post-byline">
+		    {% if post.layout == "publication" %}
+<i class="fa fa-book"></i>
+		    {% endif %} 
+		    {% if post.layout == "talks" %}
+ <i class="fa fa-comment"></i>
+		    {% endif %} 
+		    {%if post.layout == "post" %}
+ <i class="fa fa-laptop"></i> <i>Blog Post</i>
+		    {% else %}
+                <i>{{ post.venue }}</i> <br>
+                {% if post.link-download %}
+                <a href="{{ post.link-download}}">Download</a>
+		{% else %}
+		{% if post.link-preprint %}
+                <a href="{{ post.link-preprint}}">Preprint</a>
+		{% endif %}
+		{% endif %}
+		{% endif %}
+            </div>
+            <!-- POST DATE -->
+            <div class="post-date">
+                {{ post.date | date: "%B %-d, %Y" }}
+            </div>
+
+
+    <!-- POST CONTENT -->
+<!--     <hr>
+    <div class="entry-content">
+        {{ post.excerpt }}
+    </div>  -->
+
+    <!--- DIVIDING LINE -->
+<!--     <hr> -->
+
+    
+</article>
+{% endfor %}
+
+<div class="pagination">
+<center>
+{% include pagination.html %}
+</center>
+</div>
+
