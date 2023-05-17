@@ -3,7 +3,7 @@ layout: post
 categories:
 title: A "crash course" on proximity operators and nonsmooth convex optimization
 author: Zev Woodstock
-use_math: true
+use_math: false
 tags: []
 featured-image: /media/class.png
 date: 2023-05-17
