@@ -28,5 +28,5 @@ These notes will be updated live as the class continues.
 </li>
 </ul>
 
-For your convenience: <a href="/media/publications/prox-notes-may22.pdf">Lecture Notes (all in one PDF)</a>
+For your convenience: <a href="/media/publications/prox-notes-may23.pdf">Lecture Notes (all in one PDF)</a>
 
