@@ -29,7 +29,10 @@ These notes will be updated live as the class continues.
 <li>
  <a href="/media/publications/prox-notes-3.pdf">Lecture Notes 3</a>
 </li>
+<li>
+ <a href="/media/publications/prox-notes-4.pdf">Lecture Notes 4</a>
+</li>
 </ul>
 
-For your convenience: <a href="/media/publications/prox-notes-may23.pdf">Lecture Notes (all in one PDF)</a>
+For your convenience: <a href="/media/publications/prox-notes-may24.pdf">Lecture Notes (all in one PDF)</a>
 
