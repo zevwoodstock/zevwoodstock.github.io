@@ -22,17 +22,26 @@ These notes will be updated live as the class continues.
 <ul>
 <li>
  <a href="/media/publications/prox-notes-1.pdf">Lecture Notes 1</a>
+(The extended real line, inner products, norms, and optimization
+terminology)
 </li>
 <li>
  <a href="/media/publications/prox-notes-2.pdf">Lecture Notes 2</a>
+(Convexity)
 </li>
 <li>
  <a href="/media/publications/prox-notes-3.pdf">Lecture Notes 3</a>
+(Differentiability and Subdifferentials)
 </li>
 <li>
  <a href="/media/publications/prox-notes-4.pdf">Lecture Notes 4</a>
+(Proximity operators)
+</li>
+<li>
+ <a href="/media/publications/prox-notes-5.pdf">Lecture Notes 5</a>
+(Splitting algorithms)
 </li>
 </ul>
 
-For your convenience: <a href="/media/publications/prox-notes-may24.pdf">Lecture Notes (all in one PDF)</a>
+For your convenience: <a href="/media/publications/prox-notes-may25.pdf">Lecture Notes (all in one PDF)</a>
 
