@@ -39,9 +39,9 @@ terminology)
 </li>
 <li>
  <a href="/media/publications/prox-notes-5.pdf">Lecture Notes 5</a>
-(Splitting algorithms)
+(Splitting algorithms with practical notes)
 </li>
 </ul>
 
-For your convenience: <a href="/media/publications/prox-notes-may25.pdf">Lecture Notes (all in one PDF)</a>
+For your convenience: <a href="/media/publications/prox-notes-may26.pdf">Lecture Notes (all in one PDF)</a>
 
