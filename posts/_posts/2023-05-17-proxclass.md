@@ -1,7 +1,7 @@
 ---
 layout: post
 categories:
-title: A "crash course" on proximity operators and nonsmooth convex optimization
+title: "A <q>crash course</q> on proximity operators and nonsmooth convex optimization"
 author: Zev Woodstock
 use_math: false
 tags: []
@@ -43,5 +43,5 @@ terminology)
 </li>
 </ul>
 
-For your convenience: <a href="/media/publications/prox-notes-may26.pdf">Lecture Notes (all in one PDF)</a>
+For your convenience: <a href="/media/publications/prox-notes.pdf">Lecture Notes (all in one PDF)</a>
 
