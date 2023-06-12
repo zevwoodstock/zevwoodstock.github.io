@@ -15,10 +15,9 @@ course" I am teaching in May of 2023. The topic is proximity
 operators and nonsmooth convex optimization.
 These notes are not meant to be used as a standalone resource.
 Please cite peer-reviewed material. Please send me typos and errors
-via e-mail; If you want feedback on the homework exercises, drop
-them off at my office (ZIB 3107).
+via e-mail. If you would like feedback on the homework exercises,
+please drop them off at my office (ZIB 3107).
 
-These notes will be updated live as the class continues.
 <ul>
 <li>
  <a href="/media/publications/prox-notes-1.pdf">Lecture Notes 1</a>
