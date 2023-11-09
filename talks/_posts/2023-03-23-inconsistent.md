@@ -7,7 +7,7 @@ subtitle:
 author: Zev Woodstock
 venue: RT MIA workshop on Imaging inverse problems, Institut de Mathématiques de Bordeaux, FR
 
-link-text: PDF
+link-text: Presentation Slides (PDF)
 link-download: /media/talks/inconsistent.pdf
 
 tags: []

@@ -38,11 +38,15 @@
                 <i>{{ page.venue }}</i> <br>
                 {{ page.author }} <br>
 		
-		{% if page.link-download %}
-                <a href="{{ page.link-download}}">Download</a>
+		{% if page.link-text%}
+				<a href="{{ page.link}}">{{page.link-text}}</a>
 		{% else %}
 		{% if page.link-preprint %}
                 <a href="{{ page.link-preprint}}">Preprint</a>
+        {% else %}
+		{% if page.link-download %}
+                <a href="{{ page.link-download}}">Download</a>
+		{% endif %}
 		{% endif %}
 		{% endif %}
             </div><br>
