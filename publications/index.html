@@ -28,12 +28,16 @@ title: Publications
              <div class="post-byline">
 		<i>{{ post.venue }}</i>
 		<br>
-                {{ post.author }} <br>
-                {% if post.link-download %}
+        {{ post.author }} <br>
+        {% if post.link-download %}
                 <a href="{{ post.link-download}}">Download</a>
+		{% else %}
+		{% if post.link-text %}
+ 			<a href="{{ post.link}}">{{ post.link-text }}</a>
 		{% else %}
 		{% if post.link-preprint %}
                 <a href="{{ post.link-preprint}}">Preprint</a>
+		{% endif %}
 		{% endif %}
 		{% endif %}
                 <div class="post-date">
