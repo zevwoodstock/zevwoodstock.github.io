@@ -9,6 +9,8 @@ venue: RT MIA workshop on Imaging inverse problems, Institut de Mathématiques d
 
 link-text: Presentation Slides (PDF)
 link-download: /media/talks/inconsistent.pdf
+link: /media/talks/inconsistent.pdf
+
 
 tags: []
 date: 2023-03-23
