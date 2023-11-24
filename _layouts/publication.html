@@ -8,7 +8,15 @@
     {% include head.html %}
     {% include navigation.html %}
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RBHB5TVPHE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-RBHB5TVPHE');
+</script>
 <!-- BODY -->
 <body id="post-index">
     {% include browser-upgrade.html %}
