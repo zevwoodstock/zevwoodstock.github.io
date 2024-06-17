@@ -43,6 +43,11 @@ optimization.
             <br><br>
             <h2 class="entry-title">Background</h2>
             <hr>
+	<b>Assistant Professor</b>, (Starting August 2024)
+	<a href="https://www.jmu.edu/mathstat/index.shtml">
+	James Madison University</a>, Dept. of Mathematics
+    &amp; Statistics.
+    <br>
 	<b>Postdoc</b>,
 	<a href="https://iol.zib.de/">
 	Interactive Optimization and Learning Lab</a>, Technische
@@ -70,14 +75,15 @@ Universität Berlin and Zuse Institute Berlin.
 {% endif %}
 
 {% for post in paginator.posts %}
-
+{% if post.donotlist %}
+{% else %}
 <article>  
     <!-- POST FEATURED IMAGE -->
     <div class="featured-image">
         <div style="height:150px; overflow-y:hidden; position:relative">
             <a  href="{{ site.url }}{{ post.url }}">
     {% if post.featured-image == "" or post.featured-image == nil %}
-    {% if post.layout == "talks" %}
+    {% if post.layout == "talks" or post.layout == "teaching" %}
         <img src="/media/bokeh-header-1.png", style="width:100%">
     {% else %}
         <img src="/media/library-header-1.png", style="width:100%">
@@ -106,6 +112,9 @@ Universität Berlin and Zuse Institute Berlin.
 		    {% if post.layout == "talks" %}
  <i class="fa fa-comment"></i>
 		    {% endif %} 
+		    {% if post.layout == "teaching" %}
+ <i class="fa fa-school"></i>
+		    {% endif %} 
 		    {%if post.layout == "post" %}
  <i class="fa fa-laptop"></i> <i>Blog Post</i>
 		    {% else %}
@@ -121,7 +130,11 @@ Universität Berlin and Zuse Institute Berlin.
             </div>
             <!-- POST DATE -->
             <div class="post-date">
-                {{ post.date | date: "%B %-d, %Y" }}
+                {% if post.layout == "teaching" %}
+                        {{ post.semester }}
+                {% else %}
+                    {{ post.date | date: "%B %-d, %Y" }}
+                {% endif%}
             </div>
 
 
@@ -136,6 +149,7 @@ Universität Berlin and Zuse Institute Berlin.
 
     
 </article>
+{% endif %}
 {% endfor %}
 
 <div class="pagination">

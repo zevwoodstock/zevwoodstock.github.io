@@ -1,0 +1,90 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+   
+<head>
+    {% include head.html %}
+    {% include navigation.html %}
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RBHB5TVPHE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RBHB5TVPHE');
+</script>
+<!-- BODY -->
+<body id="post-index">
+    {% include browser-upgrade.html %}
+    
+    <div id="main" role="main">
+        <article class="hentry">
+
+            <div class="featured-image">
+                {% if page.featured-image == "" or page.featured-image == nil %}
+                    <img src="/media/bokeh-header-1.png", style="width:100%">
+                {% else %}
+                    <img src="{{ page.featured-image }}" style="width:100%">
+                {% endif %}
+            </div>
+            
+            <!-- MAIN -->
+            <h1 class="entry-title">
+                {{ page.title }}
+            </h1>
+            {% if page.subtitle %}
+            <h3 class="entry-subtitle">
+                {{ page.subtitle }}
+            </h3>
+            {% endif %}
+            <!-- POST BYLINE -->
+            <div class="post-byline">
+                <i>{{ page.venue }}</i> <br>
+                {{ page.author }} <br>
+		
+		{% if page.link-text%}
+				<a href="{{ page.link}}">{{page.link-text}}</a>
+		{% else %}
+		{% if page.link-preprint %}
+                <a href="{{ page.link-preprint}}">Preprint</a>
+        {% else %}
+		{% if page.link-download %}
+                <a href="{{ page.link-download}}">Download</a>
+		{% endif %}
+		{% endif %}
+		{% endif %}
+            </div><br>
+            <!-- POST DATE -->
+            <div class="post-date">
+                {{ page.semester }}
+            </div>
+
+            <hr>
+                
+            <!-- POST CONTENT -->
+            <div class="entry-content">
+                {{ page.content }}
+            </div>  
+
+            <!--- DIVIDING LINE -->
+            <hr>
+    
+            <br>
+            
+        </article>
+    </div>
+</body>
+    
+<!-- FOOTER -->  
+<footer>  
+    <div class="footer-wrapper">
+        <footer role="contentinfo">
+            {% include footer.html %}
+        </footer>
+    </div>   
+</footer>  
+</html>

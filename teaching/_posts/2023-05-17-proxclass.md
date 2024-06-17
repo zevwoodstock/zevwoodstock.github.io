@@ -1,10 +1,11 @@
 ---
-layout: post
-categories: 
+layout: teaching
+categories:
 title: "A <q>crash course</q> on proximity operators and nonsmooth convex optimization"
 author: Zev Woodstock
-donotlist: true
 use_math: false
+venue: Zuse Institute Berlin, Berlin, Germany
+semester: Summer 2023
 tags: []
 featured-image: /media/class.png
 date: 2023-05-17
