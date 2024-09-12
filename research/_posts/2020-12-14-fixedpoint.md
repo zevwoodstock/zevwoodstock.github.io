@@ -10,6 +10,7 @@ pages: 2120-–2124
 doi: 10.23919/Eusipco47968.2020.9287736
 
 link-text: IEEE
+link-code: https://github.com/zevwoodstock/Reconstruction-from-prox-points
 link-download: /media/publications/eusipco2020.pdf
 link: https://ieeexplore.ieee.org/abstract/document/9287736
 featured-image: /media/eusip2020.png
