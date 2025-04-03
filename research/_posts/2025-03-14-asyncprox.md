@@ -6,9 +6,9 @@ title: A note on asynchronous Projective Splitting in Julia
 subtitle: 
 author: Utkarsh Sharma, Kashish Goel, Aryan Dua, Sebastian Pokutta, and  Zev Woodstock
 use_math: false
-venue: Preprint
+venue: Optimization Online (preprint)
 link-code: https://github.com/zevwoodstock/AsyncProx
-
+link: https://optimization-online.org/?p=29771
 link-text: Preprint
 link-download: /media/publications/asyncprox.pdf
 
