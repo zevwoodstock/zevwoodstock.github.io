@@ -37,6 +37,33 @@ blockquote {
     line-height: 22px;
 }
 
+/*--- DROPDOWN
+ * FORMATTING -----------------------------------------------------------*/
+
+
+details p:last-of-type {
+  margin-bottom: 0.25em;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease; /* smooth transition */
+}
+summary:hover {
+        color: $highlight-color;
+        color: lighten($base-color,60);
+//        font-weight: 300;
+color: lighten($text-color,25);
+}
+
+
+/* Style for the body of the dropdown */
+.dropdown-content {
+    margin-left: 2em; /* indentation */
+    font-size: 0.95em; /* optional, tweak text size */
+//    color: #333; /* optional, adjust color */
+}
 /*--- CODE FORMAT -----------------------------------------------------------*/
 
 tt, code, kbd, samp, pre {
@@ -384,6 +411,11 @@ header .entry-meta {
 }
 
 /*--- BODY ------------------------------------------------------------------*/
+
+p b,
+p strong {
+    font-weight: bold;
+}
 
 body {
     font-family: $base-font;
