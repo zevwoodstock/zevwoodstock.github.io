@@ -11,8 +11,16 @@ title: OAT Lab @JMU
 <h2 class="entry-title"><a name="blog">Optimization &amp Algorithmic
     Theory Laboratory (OAT Lab) at James Madison University</a></h2>
 <hr>
+<div style="display: flex; justify-content: space-between; align-items: center;">
 
-<p>
+<!--
+<div style="display: flex;  flex: 0 0 20%; 
+             justify-content: space-evenly; align-items: center;">
+<img src="/media/oat-logo.jpeg" alt="OAT Lab Logo" style="max-width:
+    100px; height=auto;">
+</div>
+-->
+<p style="margin: 0; flex: 0 0 100%;">
 The
 <strong>JMU Optimization &amp Algorithmic Theory (OAT) Lab</strong> 
 conducts
@@ -25,8 +33,19 @@ mathematics, data science, image processing, digital audio
 processing, computational geometry, machine learning, biology, or
 portfolio management.
 </p>
-
-        <h4>Q &amp A</h4>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <p style="margin: 0; flex: 0 0 40%;">Our work is supported by 
+James Madison University and (effective
+  September 1, 2025) the National Science Foundation.
+  </p>
+  <div style="display: flex;  flex: 0 0 60%; gap:20px; justify-content: space-evenly; align-items: center;">
+    <img src="/media/jmu-logo.png" alt="JMU Logo" style="max-width: 140px; height=auto;">
+    <img src="/media/nsf-logo.png" alt="NSF Logo" style="max-width:
+    120px; height=auto;">
+  </div>
+</div>
+        <h3>Q &amp A</h3>
 
 
     <div class="dropdown-content">
@@ -76,33 +95,48 @@ What type of projects do you work on?
 We (A) develop algorithms that improve the state-of-the-art, 
 (B) mathematically prove that the algorithms "work", and 
 (C) Code up these algorithms to solve problems from a variety of
-applications:</p>
+applications (examples and articles linked below):</p>
 <ul>
     <li> Image reconstruction 
-<a href="/media/words.png">[img]</a>; 
+    <span class="toggle" onclick="toggleImage(this)">[+]</span> 
 <a href="/research/publications/2022-01-24/icassp2.html">
     [IEEE-1 , Fig. 2]</a>; 
 <a href="/research/publications/2022-01-24/icassp1.html">
     [IEEE-2 , Fig. 3]</a>;
 <a href="/research/publications/2022-01-15/siam.html">[SIAM
     Imaging; Fig. 5]</a>
+    <div class="image-container" style="display: none; margin-top: 5px;">
+      <img src="/media/words.png" alt="Description" style="max-width: 100%;">
+    </div> 
+    </li>
     <li> Foreground-background image segmentation  
-<a href="/media/stars.png">[img]</a>;
+    <span class="toggle" onclick="toggleImage(this)">[+]</span> 
 <a href="/research/publications/2022-01-15/siam.html">[SIAM
     Imaging; Fig. 11]</a>
+    <div class="image-container" style="display: none; margin-top: 5px;">
+      <img src="/media/stars.png" alt="Description" style="max-width: 100%;">
+    </div>
+    </li>
     <li> Classifier training 
 <a href="/research/publications/2022-01-24/icassp1.html">[IEEE-1 ,
     Sec. 4.1]</a>;
         <a href="/research/publications/2025-03-14/asyncprox.html">
            [Opt. Online, Sec. 4.1]</a>
+    </li>
 <li> Stereoscopic image recovery 
-<a href="/media/async-img.png">[img]</a>;
+    <span class="toggle" onclick="toggleImage(this)">[+]</span> 
 <a href="/research/publications/2025-03-14/asyncprox.html">
            [Opt. Online, Fig. 1]</a>
+    <div class="image-container" style="display: none; margin-top: 5px;">
+      <img src="/media/async-img.png" alt="Description" style="max-width: 100%;">
+    </div>
+</li>
     <li> Digital audio reconstruction
    <a href="/posts/2022-03-30/audio.html">[audio]</a>
+    </li>
     <li> Future projects may be guided by student interests,
         provided they are within the general scope of the lab.
+    </li>
 </ul>
 <p>
 For more examples, including the theoretical specifications of the
@@ -127,8 +161,9 @@ creating a sequence. Mathematically, we seek to prove that the
 sequence converges to a solution of the problem we're trying
 to solve. This requires (A) modeling the problem we're trying to
 solve mathematically, (B) characterizing a "solution"
-mathematically, and (C) proving that our algorithm converges to a
-solution. In practice, this involves a lot of head-scratching and
+mathematically, and (C) proving that the sequence created by our
+algorithm converges to a solution. In practice, this involves a lot
+of head-scratching and
 staring at blackboards.
         </p>
     </div>
@@ -271,7 +306,7 @@ using the "independent study" guidelines.
 
 
 <p>
-<strong>Independent Study / Honors thesis:</strong>
+<strong>Independent Study and/or Honors thesis:</strong>
 Applications for independent study are reviewed on a rolling basis.
 To apply, send an <a href="mailto:woodstzc@jmu.edu">email</a>
 titled "Undergraduate Research Application" with a transcript
@@ -282,7 +317,8 @@ self-study, prior coursework, etc.). </p>
 
 <p>
 <strong>Research Assistantships:</strong>
-Currently, there are no open RA positions. Please <a
+We anticipate that several RA positions may become available this
+academic year. Please <a
                                                 href="https://jmu.questionpro.com/oatlab">sign
                                                 up for our email
                                                 list</a>
@@ -293,6 +329,15 @@ to receive announcements when RA positions open up.
 </div>
 
 
+<script>
+  function toggleImage(toggleSpan) {
+    const imageContainer = toggleSpan.parentElement.querySelector('.image-container');
+    const isVisible = imageContainer.style.display === 'block';
+
+    imageContainer.style.display = isVisible ? 'none' : 'block';
+    toggleSpan.textContent = isVisible ? '[+]' : '[-]';
+  }
+</script>
 <!--
     <h2 class="entry-title"><a name="contact">In other news...</a></h2>
         <hr>

@@ -135,6 +135,7 @@ figure {
   	margin: 0 auto;
     margin-bottom: 0px;
     display: block;
+    flex-shrink: 0;
   }
 }
 
@@ -282,6 +283,12 @@ li.entry-title{
     a:hover{
         color: lighten($highlight-color,0);
     }
+}
+
+.toggle {
+  cursor: pointer;
+  color: lighten($highlight-color,0);
+  margin-right: 5px;
 }
 
 header .entry-meta {
