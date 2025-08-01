@@ -7,23 +7,19 @@ title: Teaching
         <a>{{ page.title }}</a>
     </h1>
     <hr>
-<!--</article>-->
 
 {% for post in site.categories.teaching %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
     {% capture next_year %}{{ post.next.date | date: "%Y" }}{% endcapture %}
 
     {% if forloop.first %}
-    <!--<article>-->
-    <!---<h1 class="entry-title">{{ next_year }}</h1>-->
-      
+       
         <ul>
         {% endif %}
 
         <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <br> 
              <div class="post-byline">
                  <i>{{ post.venue }}</i> <br>
-                {{ post.author }} <br>
                 <div class="post-date">
                     {{ post.semester  }}
                 </div>
@@ -31,16 +27,6 @@ title: Teaching
 
     {% if forloop.last %}
     </ul>
-        
-    <!--</article>-->
-    {% else %}
-        {% if this_year != next_year %}
-          </ul>
-        <!--</article>-->
-        <!--<article>-->
-          <h1 id="{{ next_year }}-ref" class="entry-title">{{next_year}}</h1>
-          <ul>
-        {% endif %}
     {% endif %}
 {% endfor %}
 
@@ -52,7 +38,6 @@ title: Teaching
     {% capture this_categories %}{{ post.categories }}{% endcapture %}
 
     {% if forloop.first %}
-    <!--<article>-->
         <h1 class="entry-title"><a name="talks">Selected
 	presentations</a></h1>
         <hr>
