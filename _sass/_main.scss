@@ -237,6 +237,25 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a 
   gap: 10px;
 }
 
+
+.text-col1 {
+  flex: 0 0 80%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.image-col1 {
+  flex: 0 0 20%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+
 /* Stack vertically on small screens */
 @media (max-width: 600px) {
   .text-col,
