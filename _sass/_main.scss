@@ -259,11 +259,14 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a 
 /* Stack vertically on small screens */
 @media (max-width: 600px) {
   .text-col,
-  .image-col {
+  .image-col,
+  .text-col1,
+  .image-col1 {
     flex: 0 0 100%;
   }
 
-  .image-col {
+  .image-col,
+  .image-col1 {
     justify-content: center;
   }
 }.entry-content {
