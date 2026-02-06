@@ -6,12 +6,11 @@ copyright:        Zev Woodstock
 future:      true # publish future dated posts --  true, false (default) 
 highlighter: rouge
 markdown:    kramdown
-gems:
+plugins: 
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-gist
   - jekyll-feed
-plugins: 
   - jekyll-paginate
 paginate_path: "/posts/page:num"
 sass:
