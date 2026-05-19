@@ -153,8 +153,25 @@ For more examples, including the theoretical specifications of the
     <div class="dropdown-content">
         <p>
 [<em>This explanation assumes an introductory understanding of
-    sequences</em>] An "algorithm" is really just a fancy way of
-creating a sequence. Mathematically, we seek to prove that the
+    sequences</em>] Unlike the optimization we usually see in
+Calculus 1, most
+real-world optimization problems cannot be solved using
+pen-and-paper. In practice, a more tractable approach is to design
+a process that takes an approximation of a solution, then 
+improves it. For instance, in the context of
+minimization, an "improvement" may correspond to lowering the function
+value [it turns out this is typically much easier than finding the
+lowest possible value in one step]. The algorithms we typically
+consider will repeatedly apply an
+improvement process, thereby
+constructing a sequence of increasingly-better approximate
+solutions. From this perspective,
+an "algorithm" is really just a fancy way of
+creating a sequence.
+        </p>
+
+        <p>
+Mathematically, we seek to prove that the
 sequence converges to a solution of the problem we're trying
 to solve. This requires (A) modeling the problem we're trying to
 solve mathematically, (B) characterizing a "solution"
@@ -175,17 +192,22 @@ staring at blackboards.
 
     <div class="dropdown-content">
 <p>
-We usually use <a href="https://julialang.org/">Julia</a>, although
-some prototyping is also done in
+We usually use <a href="https://julialang.org/">Julia</a> (Why?
+Beacuse it's fast. Check out the 
+<a href="https://thenewstack.io/the-fastest-programming-language-daves-garage-seeks-the-answer/">
+    software dragrace</a> and its 
+<a href="https://plummerssoftwarellc.github.io/PrimeView/">
+    up-to-date results</a>!).
+Some prototyping is also done in
 Python or Octave (which is like MATLAB, but free/open-source).
 </p>
 <p>
 We have computing resources available on-campus for prototyping of
-small projects, and we use the JMU High Performance Computing
+small projects, and we use the JMU CSM High Performance Computing
 cluster for larger jobs. Experience with the programs
 <code>git</code>, <code>LaTeX</code>,
 <code>vi(m)</code>, <code>ssh</code>,
-<code>sshfs</code>, and <code>slurm</code> are a plus, but most
+<code>bash</code>, and <code>slurm</code> are a plus, but most
 students learn it on the job just fine.
 </p>
     </div>
@@ -234,20 +256,25 @@ are happy to have both.
 </p>
 
 <p>
-<strong>[Prerequisites]</strong> Most of our projects require some knowledge of linear
+<strong>[Prerequisites]</strong> Most of our projects require some
+knowledge of <strong>linear
         algebra (inner product spaces), calculus
-        (sequences/series), programming, proofs, and optimization.
-         However, <strong>there is <em>no expectation</em> to know
+        (sequences/series), programming, mathematical proofs, and
+        optimization</strong>.
+        The more you know, the better.
+         However, <em>there is no expectation to know
             all of these
             topics at the beginning - just an eagerness to learn.
-            </strong> 
-            If curious about JMU classes: MATH 236 can be quite
-            helpful for early students.
-            Further JMU classes that cover these topics
-            include MATH 237, 245, 248, 300, 340, 410, and 434
-            (although, again, these are not prerequisites; students
-            will be expected to learn the necessary topics while
-            they conduct research).
+            </em> 
+            If curious about JMU classes, these cover relevant
+            topics: MATH 236, 237, 245 (or CS 227/327), 248, 300,
+            340, 410, 411, and 434
+            (although, again, <strong>these are not
+                prerequisites</strong>; and
+            students will be expected to learn the necessary topics
+            while they conduct research). Most beginning
+            students have the equivalent experience to 2 or 3 of
+            the classes listed above.
 </p>
 <p>
 <strong>[Major]</strong>
