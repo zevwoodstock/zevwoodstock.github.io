@@ -27,12 +27,12 @@ theoretical analysis of new algorithms, to the efficient
 programming of promising algorithms to solve real-world problems.
 Most student projects can be tailored to meet interests in
 mathematics, data science, image processing, digital audio
-processing, computational geometry, machine learning, biology, or
-portfolio management.
+processing, computational geometry, machine learning, biology,
+portfolio management, or robotics.
 </p>
 </div>
 <div class="content-row">
-  <p class="text-col">Our work is supported by 
+  <p class="text-col">Our work is currently supported by 
 James Madison University and the National Science Foundation
 (Grant #DMS-2532423).
   </p>
@@ -42,6 +42,135 @@ James Madison University and the National Science Foundation
     120px; height=auto; object-fit: contain; flex-shrink: 0">
   </div>
 </div>
+
+<h4> Student researchers &amp project(s) </h4>
+<div class="dropdown-content">
+<details open>
+    <summary>
+<strong> Current student researchers</strong>
+    </summary>
+    <p>
+<ul>
+<li>
+Rory Gardner (Spring 2026 +)
+<ul>
+    <li>Benchmarking optimization solvers for inverse
+kinematics (IK) problems in robotics using <a
+                                              href="https://drake.mit.edu/">Drake</a>.</li>
+    <li> Implementing <a
+                              href="https://ieeexplore.ieee.org/document/10494919">GJK++</a>
+        (a Frank-Wolfe based collision
+        detection algorithm) into <a
+            href="https://drake.mit.edu/">Drake</a>.
+    </li>
+</li>
+</ul>
+
+<li>
+    <a href="https://www.nicholasharsell.com/">Nicholas Harsell</a> (Spring 2026 +)
+<ul>
+    <li>Developing a new Block-iterative Frank-Wolfe splitting algorithm
+    </li>
+    <li>
+        Error-tolerant proximal splitting methods with Frank-Wolfe
+        subroutines
+    </li>
+</ul>
+</li>
+<li>
+    <a href="https://nathanhcarter.github.io/">Nathan Carter</a>
+    (Summer 2026 +)
+<ul>
+    <li>Stability properties of the proximal average relaxation in
+        convex optimization.
+    </li>
+   </ul>
+</li>
+<li>
+Kevin Scafe (Summer 2026 +)
+<ul>
+    <li>Stability properties of the proximal average relaxation in
+        convex optimization.
+    </li>
+   </ul>
+</li>
+</ul>
+    </p>
+</div>
+</details>
+
+<div class="dropdown-content">
+<details open>
+    <summary>
+<strong> Former student researchers</strong>
+    </summary>
+<p>
+<ul>
+<li> Lauren Wiermanski (2026);             Numerical efficiency and benchmarking related to the
+            minimum-distance lower bound constraint 
+            for inverse kinematics (IK) problems in robotics using 
+            <a href="https://drake.mit.edu/">Drake</a>;
+            Initial investigations into GJK++ for collision
+            detection (Rory Gardner continuing project);
+next position:
+    Business analyst at VPGC
+</li>
+<li>
+Arsenii Herasymov (2026) - 
+Developing a new Block-iterative Frank-Wolfe splitting algorithm;
+next position: UVA
+</li>
+<li>
+    Luke Bonnell (2026) - 
+         Splitting problems arising from inverse kinematics tasks in robotics
+</li>
+<li>
+Florian Polster-Prieto
+(2023 @ <a
+        href="https://iol.zib.de/">ZIB-IOL</a>) - Improved
+    numerical analysis and implementation for the proximity operator
+    of the nuclear norm, with applications to signal processing;
+    next position: Grad school at École Nationale Supérieure de
+    l'Électronique et de ses Applications (ENSEA)
+</li>
+<li>
+    Pauline Janssen (2023 @ <a
+        href="https://iol.zib.de/">ZIB-IOL</a>) - Improved
+    numerical analysis and implementation for the proximity operator
+    of the nuclear norm, with applications to signal processing
+<li>
+    <a href="https://www.linkedin.com/in/utkarsh21/">Utkarsh
+        Sharma</a> (2023 - REU @ <a
+        href="https://iol.zib.de/">ZIB-IOL</a>) - <a
+        href="/research/publications/2025-03-14/asyncprox.html">Asynchronous
+        Projective Splitting in Julia</a>; next position:
+    Quantitative devopment at D. E. Shaw, QRT
+</li>
+<li>
+    <a
+            href="https://www.linkedin.com/in/kashish-goel-1b0631223/">Kashish
+            Goel</a> (2023 - REU @ <a
+        href="https://iol.zib.de/">ZIB-IOL</a>) - <a
+        href="/research/publications/2025-03-14/asyncprox.html">Asynchronous
+        Projective Splitting in Julia</a>; next position: Software
+    Engineering at Google
+</li>
+<li>
+    <a href="https://tan90cot0.github.io/">Aryan Dua</a> (2022 - REU @ <a href="https://iol.zib.de/">ZIB-IOL</a>) -
+<a
+        href="/research/publications/2025-03-14/asyncprox.html">Asynchronous
+        Projective Splitting in Julia</a>; next position: ML
+    Engineer at startup
+</li>
+</p>
+</div>
+</details>
+
+
+
+
+</ul>
+
         <h3>Q &amp A</h3>
 
 
@@ -92,7 +221,9 @@ What type of projects do you work on?
 We (A) develop algorithms that improve the state-of-the-art, 
 (B) mathematically prove that the algorithms "work", and 
 (C) Code up these algorithms to solve problems from a variety of
-applications (examples and articles linked below):</p>
+applications. Descriptions of current and former student projects
+can be found above, and some specific applications and
+articles are linked below:</p>
 <ul>
     <li> Image reconstruction 
     <span class="toggle" onclick="toggleImage(this)">[+]</span> 
@@ -374,64 +505,4 @@ to receive announcements when more RA positions open up.
     toggleSpan.textContent = isVisible ? '[+]' : '[-]';
   }
 </script>
-<!--
-    <h2 class="entry-title"><a name="contact">In other news...</a></h2>
-        <hr>
-		<ul>
-<li class="entry-title">
-  I have several available projects for students and/or collaborators:
-  <ul>
-      <li class="entry title">
-          development of new and efficient Frank-Wolfe /
-          conditional gradient algorithms [applications in data
-          science/graph denoising/recommender training],
-      </li>
-  <li class="entry title">
-  using
-  fixed-point theory to analyze relaxations of optimization
-  problems [applications in <a
-                                href="../research/publications/2022-01-24/icassp2.html">image
-                                </a> and <a
-                                                     href="../posts/2022-03-30/audio.html">audio
-                                </a> processing], and
-  </li>
-  <li class="entry title">
-      a computational geometry project [applications in
-      neuroscience].
-  </li>
-  </ul>
-                        </li>
-</article>
 
-<article>
-    <h2 class="entry-title"><a name="contact">Contact</a></h2>
-        <hr>
-        <p class="entry-title">
-		<i class="fa fa-envelope"></i> &emsp;
-		<a href="mailto:woodstzc@jmu.edu">
-		woodstzc (at) jmu (dot) edu
-		</a>
-		</p>
-
-		<p class="entry-title">
-		<i class="fa fa-phone"></i> &emsp;
-		<a href="tel:+15405681736">
-		+1 (540) 568 - 1736
-		</a>
-		</p>
-
-        <p class="entry-title">
-			<i class="fa fa-university"></i> &emsp;
-		<a href="https://map.jmu.edu/?id=1869#!m/592737?share">
-                    Roop Hall</a>, Room 310 <br> <br>
-			<i class="fa fa-mail-bulk"></i> 
-		&emsp;&emsp;MSC 1911<br>
-		&emsp;&emsp;&emsp;&emsp;60 Bluestone Drive<br>
-		&emsp;&emsp;&emsp;&emsp;Room 305<br>
-		&emsp;&emsp;&emsp;&emsp;Harrisonburg, Virginia<br>
-		&emsp;&emsp;&emsp;&emsp;22807, USA<br>
-		</p>
-                        <p align="center">
-
-</article>
--->
